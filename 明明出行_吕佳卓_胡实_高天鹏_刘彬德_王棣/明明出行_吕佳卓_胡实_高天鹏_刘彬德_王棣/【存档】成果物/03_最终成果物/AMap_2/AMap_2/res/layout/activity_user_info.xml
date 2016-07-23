@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".UserInfoActivity" >
+
+   <RelativeLayout
+	    android:id="@+id/user_info_layout"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="24dp" >
+	    	<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_centerVertical="true"
+		    android:layout_alignParentTop="true"
+			android:paddingTop="10dp"
+		    android:layout_marginTop="24dp"
+		    android:src="@drawable/nick_name" />
+
+		 <EditText
+		     android:id="@+id/user_center_nickname"
+		     android:layout_width="match_parent"
+		     android:layout_height="wrap_content"
+		     android:layout_alignBottom="@+id/imageView1"
+		     android:layout_alignTop="@+id/imageView1"
+		     android:layout_marginLeft="24dp"
+		     android:layout_toRightOf="@+id/imageView1"
+		     android:ems="8" />
+
+		 <ImageView
+		    android:id="@+id/imageView2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentLeft="true"
+		    android:layout_below="@+id/imageView1"
+		    android:layout_marginTop="36dp"
+		    android:src="@drawable/gender" />
+		
+		 <RadioGroup 
+		    android:id="@+id/user_center_gender"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="horizontal"
+		    android:layout_alignLeft="@+id/user_center_nickname"
+		    android:layout_alignBottom="@+id/imageView2"
+		     >
+		     <RadioButton 
+		         android:id="@+id/user_center_male"
+		         android:layout_width="wrap_content"
+		    	 android:layout_height="wrap_content"
+		    	 android:text="@string/male"/>
+		     <RadioButton 
+		         android:id="@+id/user_center_female"
+		         android:layout_width="wrap_content"
+		    	 android:layout_height="wrap_content"
+		    	 android:text="@string/female"/>
+		 </RadioGroup>
+   </RelativeLayout>
+
+   <Button
+       android:id="@+id/modify"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/user_info_layout"
+       android:layout_below="@+id/user_info_layout"
+       android:layout_marginTop="72dp"
+       android:background="@color/main_color"
+       android:text="@string/modify" />
+   
+</RelativeLayout>

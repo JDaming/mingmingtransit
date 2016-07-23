@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_not_open_city" />
+
+    <ImageView
+        android:id="@+id/station_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView1"
+        android:layout_below="@+id/route_query"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/ic_main_stop_search" />
+
+    <ImageView
+        android:id="@+id/around_bus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/main_navigation"
+        android:layout_alignTop="@+id/station_query"
+        android:src="@drawable/around_bus" />
+
+    <ImageView
+        android:id="@+id/route_query"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/station_query"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:src="@drawable/ic_main_route_search" />
+
+    <ImageView
+        android:id="@+id/main_navigation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/imageView1"
+        android:layout_alignTop="@+id/route_query"
+        android:layout_marginRight="52dp"
+        android:src="@drawable/ic_main_navigation" />
+    
+</RelativeLayout>
